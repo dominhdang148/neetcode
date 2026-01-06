@@ -9,4 +9,5 @@ def hasDublicate(nums: List[int]) -> bool:
     if any value appears more than once in the array,
     otherwise return `false`
     """
+
     return len(set(nums)) != len(nums)

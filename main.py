@@ -1,3 +1,4 @@
-from arrays_n_hashing.score_of_a_string import scoreOfString
+from arrays_n_hashing.contain_duplicate import hasDublicate
 
-print(scoreOfString("neetcode"))
+
+print(hasDublicate([1, 2, 3]))

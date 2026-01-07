@@ -1,4 +1,4 @@
-from arrays_n_hashing.contain_duplicate import hasDublicate
+from arrays_n_hashing.valid_anagram import isAnagram
 
 
-print(hasDublicate([1, 2, 3, 4, 4]))
+print(isAnagram("jam", "jar"))

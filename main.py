@@ -1,4 +1,4 @@
-from arrays_n_hashing.valid_anagram import isAnagram
+from arrays_n_hashing.replace_element import replaceElement
 
 
-print(isAnagram("jam", "jar"))
+print(replaceElement([2, 4, 5, 3, 1]))

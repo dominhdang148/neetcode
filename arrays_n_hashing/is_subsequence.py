@@ -11,7 +11,12 @@ def isSubsequence(s: str, t: str) -> bool:
     (i.e., `"ace"` is a subsequence of `"abcde"` while `"aec"` is not)
     """
 
-    tIndex = 0
-    sIndex = 0
+    sIndex = tIndex = 0
 
-    # print(range(len(s) - 1))
+    while sIndex < len(s) and tIndex < len(t):
+        if s[sIndex] == t[tIndex]:
+            sIndex += 1
+
+        tIndex += 1
+
+    return sIndex == len(s) - 1

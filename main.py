@@ -1,4 +1,4 @@
-from arrays_n_hashing.replace_element import replaceElement
+from arrays_n_hashing.is_subsequence import isSubsequence
 
 
-print(replaceElement([2, 4, 5, 3, 1]))
+print(isSubsequence("node", "neetcode"))

@@ -19,4 +19,4 @@ def isSubsequence(s: str, t: str) -> bool:
 
         tIndex += 1
 
-    return sIndex == len(s) - 1
+    return sIndex == len(s)

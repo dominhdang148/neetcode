@@ -148,3 +148,27 @@ class ArrayAndHashing:
             sIndex += 1
 
         return len(t) - tIndex
+
+    def lengthOfLastWord(self, s: str) -> int:
+        """
+        8. Length Of Last Word
+
+        You are give a string `s` consisting of words and spaces, return the
+        length of the `last` word in the string.
+
+        A `word` is a maximal substring consisting of non-space characters only
+
+        Note: A `substring` is a contigous non-empty sequence of characters
+        within a string.
+        """
+
+        index, length = 1, 0
+
+        while s[-index] == ' ':
+            index += 1
+
+        while index <= len(s) and s[-index] != ' ':
+            index += 1
+            length += 1
+
+        return length

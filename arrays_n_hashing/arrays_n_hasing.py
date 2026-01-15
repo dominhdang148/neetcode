@@ -172,3 +172,25 @@ class ArrayAndHashing:
             length += 1
 
         return length
+
+    def validWordSquare(self, words: List[str]) -> bool:
+        """
+        9. Valid Word Square
+
+        Given an array of strings `words`, return `true` if it form
+        a valid word square.
+
+        A sequence of strings form a valid word square if the
+        kth row and column read the same string, where
+        0<= k <= max(numRows, numColums)
+        """
+
+        for i in range(len(words)):
+            for j in range(len(words[i])):
+                if j >= len(words) or \
+                        i >= len(words[j]) or \
+                        words[i][j] != words[j][i]:
+
+                    return False
+
+        return True
